@@ -19,8 +19,6 @@ int main()
     double l_operand;
     double r_operand;
 
-    printf("Enter an operation: ");
-
     while ((type = get_operator(operator)) != EOF)
     {
         if (type == NUMBER)
@@ -50,10 +48,9 @@ int main()
                     break;
             }
         }
-        else if (type == '\n')
+        else if (type == '\n' || type == EOF)
         {
-            printf("Answer is: %.8g\n", pop(s));
-            printf("Enter an operation: ");
+            printf("%.8g\n", pop(s));
         }
         else
         {
