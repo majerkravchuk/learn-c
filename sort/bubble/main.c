@@ -16,4 +16,6 @@ int main(int argc, char **argv)
         printf("%u ", numbers[i]);
 
     printf("\n");
+
+    return 0;
 }

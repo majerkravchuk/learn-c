@@ -7,10 +7,3 @@ void bubble_sort(int arr[], int size)
             if (arr[j] > arr[j + 1])
                 swap(&arr[j], &arr[j + 1]);
 }
-
-void swap(int* a, int* b)
-{
-    *a = *a ^ *b;
-    *b = *a ^ *b;
-    *a = *a ^ *b;
-}
